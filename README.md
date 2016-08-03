@@ -22,13 +22,21 @@ Recommended: Windows 7+, 16+ gigabytes of RAM, GTX 780+, but it should run on le
 If you wish to seperate out the requirements, it uses SFML 2.1. If you wish to utilize Poco (for networking), it uses an older version of poco and you must define USE_POCO in the code.
 
 Steps:
+
 1) install git as needed (duh!)
+
 2) create the folder "c:\wamp\www" if it does not already exist
+
 3) open cmd and navigate this folder (type "cd c:\wamp\www")
+
 4) type "git clone https://github.com/gavanw/voxelquestiso.git"
+
 5) type "cd voxelquestiso"
+
 6) type "explorer ."
+
 7) extract "resources.zip" to this folder (if using WinRar, right click on the zip file and select "extract to here")
+
 8) open "GLSLFragmentLighting.sln"
 
 
