@@ -61,24 +61,43 @@ My vector class is really crappy (FIVector4) - it was intended to be a hybrid in
 Executable is located in the bin folder, if not compiling.
 
 Default controls:
+
 Mouse + Left Button (LB): pan along the XY (ground) plane
+
 Mouse + Right Button (RB): pan along the Z axis (HIGHLY recommended you figure out how to do this - it will load chunks around your the center of your camera location, and for all you know your camera may be way above or below where you want to load chunks - hard to tell in isometric mode but the fog does provide minor depth cues)
+
 Mouse Wheel: zoom out (zoom out really far to get to the map, where you can pan to a new location using same controls above - HIGHLY recommended you do this on bootup, as it will likely spawn you somewhere random like the middle of an ocean)
+
 Ctrl: show control boxes. This will bring up boxes you can manipulate using the above, while holding down ctrl. The green box controls the cutaway, the white box controls the light, the blue box controls the fog.
+
 g: toggle edit modes: 0: no editing, 1: edit voxels (click several times with LB to add voxels, RB to remove voxels), 2: edit buildings
+
 s: toggle macro edit mode (for edit mode 1), makes bigger chunks of terrain
+
 d: toggle day/night
+
 p: toggle fullscreen
+
 tab: toggle menu
+
 c: clear/refresh scene
+
 r: refresh shaders
+
 f: fog on/off
+
 A (capital A): increase chunk load radius
+
 Z (capital Z): decrease chunk load radius
+
 v (while in edit mode 2): toggle building visibility
+
 l: turn on multiple colored lights for testing (hold down ctrl to see them and move them)
+
 e: set camera to nearest elevation
+
 [ and ]: decrease/increase detail (shadow steps, AO steps, radiosity steps)
+
 esc (press several times): exit
 
 ## Contributing
