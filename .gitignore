@@ -24,3 +24,14 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Directories
+######################
+data/
+debugdlls/
+dlls/
+freeglut/
+glew/
+SFML-2.1/
+util/
+

@@ -2,6 +2,8 @@
   <content><![CDATA[
 # ${1:Voxel Quest Isometric}
 
+IMPORTANT: FOLLOW INSTALL INSTRUCTIONS!
+
 Voxel Quest is a project with several engine iterations. This is the very first engine iteration, and features isometric voxel rendering. See http://www.voxelquest.com for more info.
 
 Note that this is the earliest engine iteration and many fixes have been made since then, but there is also high demand for the isometric version of the engine so I am releasing that first in spite of the fact that it is the least polished iteration.
@@ -18,7 +20,16 @@ This project currently MUST exist at C:\wamp\www\voxelquestiso. This is bad, I k
 
 Recommended: Windows 7+, 16+ gigabytes of RAM, GTX 780+, but it should run on less.
 
-If you wish to seperate out the requirements, it uses SFML 2.1. If you wish to utilize Poco (for networking), it uses an older version of poco and you must define USE_POCO in the code. 
+If you wish to seperate out the requirements, it uses SFML 2.1. If you wish to utilize Poco (for networking), it uses an older version of poco and you must define USE_POCO in the code.
+
+Steps:
+1) install git as needed (duh!)
+2) create the folder "c:\wamp\www" if it does not already exist
+3) open cmd and navigate this folder ("cd c:\wamp\www")
+4) git clone https://github.com/gavanw/voxelquestiso.git
+5) cd voxelquestiso
+6) GLSLFragmentLighting.sln
+
 
 ## Building 
 
