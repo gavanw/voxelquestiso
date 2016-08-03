@@ -1,6 +1,5 @@
-<snippet>
-  <content><![CDATA[
-# ${1:Voxel Quest Isometric}
+
+## Voxel Quest Isometric
 
 IMPORTANT: FOLLOW INSTALL INSTRUCTIONS!
 
@@ -112,7 +111,3 @@ All other sounds and instruments were from:
 http://tracker.modarchive.org/
 
 Almost all of the code and other resources were created by me, a few things were scraped from public resources (Stack Overflow, tutorials, etc). If you see something that should be under a license but is not, please let me know.
-
-]]></content>
-  <tabTrigger>readme</tabTrigger>
-</snippet>
