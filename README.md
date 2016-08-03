@@ -8,7 +8,7 @@ Voxel Quest is a project with several engine iterations. This is the very first 
 
 Note that this is the earliest engine iteration and many fixes have been made since then, but there is also high demand for the isometric version of the engine so I am releasing that first in spite of the fact that it is the least polished iteration.
 
-This is a very, very, VERY rough release. There are many things wrong with the way this project is organized currently, and I am well aware of most of them but feel free to comment. A few things that are wrong: use of absolute paths, including all requirements within the same project folder, unnecessary files in the repository (it needs a gitignore!), an all-around messy project structure, etc. In short, this thing is more fun than a jar full of angry bees.
+This is a very, very, VERY rough release. There are many things wrong with the way this project is organized currently, and I am well aware of most of them but feel free to comment. A few things that are wrong: use of absolute paths, including all dependencies within the same project folder, unnecessary files in the repository, an all-around messy project structure, etc. In short, this thing is more fun than a jar full of angry bees!
 
 The code is also not that well organized, but I will try to explain it as best I can.
 
@@ -25,10 +25,12 @@ If you wish to seperate out the requirements, it uses SFML 2.1. If you wish to u
 Steps:
 1) install git as needed (duh!)
 2) create the folder "c:\wamp\www" if it does not already exist
-3) open cmd and navigate this folder ("cd c:\wamp\www")
-4) git clone https://github.com/gavanw/voxelquestiso.git
-5) cd voxelquestiso
-6) GLSLFragmentLighting.sln
+3) open cmd and navigate this folder (type "cd c:\wamp\www")
+4) type "git clone https://github.com/gavanw/voxelquestiso.git"
+5) type "cd voxelquestiso"
+6) type "explorer ."
+7) extract "resources.zip" to this folder (if using WinRar, right click on the zip file and select "extract to here")
+8) open "GLSLFragmentLighting.sln"
 
 
 ## Building 
@@ -53,8 +55,8 @@ Executable is located in the bin folder, if not compiling.
 
 Default controls:
 Mouse + Left Button (LB): pan along the XY (ground) plane
-Mouse + Right Button (RB): pan along the Z axis ()
-Mouse Wheel: zoom out (zoom out really far to get to the map, where you can pan to a new location using same controls above)
+Mouse + Right Button (RB): pan along the Z axis (HIGHLY recommended you figure out how to do this - it will load chunks around your the center of your camera location, and for all you know your camera may be way above or below where you want to load chunks - hard to tell in isometric mode but the fog does provide minor depth cues)
+Mouse Wheel: zoom out (zoom out really far to get to the map, where you can pan to a new location using same controls above - HIGHLY recommended you do this on bootup, as it will likely spawn you somewhere random like the middle of an ocean)
 Ctrl: show control boxes. This will bring up boxes you can manipulate using the above, while holding down ctrl. The green box controls the cutaway, the white box controls the light, the blue box controls the fog.
 g: toggle edit modes: 0: no editing, 1: edit voxels (click several times with LB to add voxels, RB to remove voxels), 2: edit buildings
 s: toggle macro edit mode (for edit mode 1), makes bigger chunks of terrain
