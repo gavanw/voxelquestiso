@@ -19,7 +19,7 @@ This project currently MUST exist at C:\wamp\www\voxelquestiso. This is bad, I k
 
 Recommended: Windows 7+, 16+ gigabytes of RAM, GTX 780+, but it should run on less.
 
-If you wish to seperate out the requirements, it uses SFML 2.1. If you wish to utilize Poco (for networking), it uses an older version of poco and you must define USE_POCO in the code.
+If you wish to separate out the requirements, it uses SFML 2.1. If you wish to utilize Poco (for networking), it uses an older version of poco and you must define USE_POCO in the code.
 
 Steps:
 
