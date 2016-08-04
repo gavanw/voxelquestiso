@@ -1,11 +1,12 @@
+IMPORTANT: FOLLOW INSTALL INSTRUCTIONS!
+
 ## ADDITIONAL REQUIRED FILES:
+
 Download this and extract as instructed in "installing" below
 https://github.com/gavanw/voxelquestiso/releases/download/0.11/resources.zip
 
 
 ## Voxel Quest Isometric
-
-IMPORTANT: FOLLOW INSTALL INSTRUCTIONS!
 
 Voxel Quest is a project with several engine iterations. This is the very first engine iteration, and features isometric voxel rendering. See http://www.voxelquest.com for more info.
 
