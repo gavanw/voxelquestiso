@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head profile="http://www.w3.org/2005/10/profile">
+		<link rel="icon" type="image/png" href="favicon.ico">
+	    <meta charset="utf-8">
+	    <title>VoxelQuest</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+		<style>
+			body {
+				color: #ffffff;
+				font-family:Monospace;
+				font-size:13px;
+				text-align:left;
+				font-weight: bold;
+
+				background-color: #000044;
+				margin: 0px;
+				overflow: hidden;
+			}
+
+			a {
+
+				color: #ffffff;
+			}
+
+			#oldie a { color:#da0 }
+		</style>
+	</head>
+	<body>
+
+		<canvas
+			id="canvas"
+			height="256"
+			width="256"
+			style="display: none"
+		>
+		</canvas>
+		<div id="container"></div>
+		
+		<canvas
+			id="canvas2"
+			height="96"
+			width="1024"
+		>
+		</canvas>
+
+		<script>g_fonts = {};</script>
+		<script src="./fonts/old_london_regular_96.js"></script>
+		<script src="./fonts/arial_black_regular_48.js"></script>
+		<script src="./fonts/arial_black_regular_96.js"></script>
+		<script src="./three.js"></script>
+		<script src="./Detector.js"></script>
+		<script src="./stats.min.js"></script>
+		<script src="./colors.js"></script>
+		<!--<script src="./planeover.js"></script>-->
+		<script src="./jquerymin.js"></script>
+		<script src="./jqmousewheel.js"></script>
+		<script>var j$ = jQuery.noConflict();</script>
+		<script src="./mootools.js"></script>
+		<script src="./frontend.js"></script>
+
+	</body>
+</html>

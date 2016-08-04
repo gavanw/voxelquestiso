@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "glew_shared", "glew\build\vc10\glew_shared.vcxproj", "{55AE3D72-7DE6-F19F-AEF2-9AE8CA26CF3D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VoxelQuest", "VoxelQuest\VoxelQuest.vcxproj", "{AEAC4286-2203-4B42-A016-BCE0503806CF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{55AE3D72-7DE6-F19F-AEF2-9AE8CA26CF3D} = {55AE3D72-7DE6-F19F-AEF2-9AE8CA26CF3D}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug MX|Win32 = Debug MX|Win32
+		Debug MX|x64 = Debug MX|x64
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release MX|Win32 = Release MX|Win32
+		Release MX|x64 = Release MX|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55AE3D72-7DE6-F19F-AEF2-9AE8CA26CF3D}.Debug MX|Win32.ActiveCfg = Debug MX|Win32
+		{55AE3D72-7DE6-F19F-AEF2-9AE8CA26CF3D}.Debug MX|Win32.Build.0 = Debug MX|Win32
+		{55AE3D72-7DE6-F19F-AEF2-9AE8CA26CF3D}.Debug MX|x64.ActiveCfg = Debug MX|x64
+		{55AE3D72-7DE6-F19F-AEF2-9AE8CA26CF3D}.Debug MX|x64.Build.0 = Debug MX|x64
+		{55AE3D72-7DE6-F19F-AEF2-9AE8CA26CF3D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{55AE3D72-7DE6-F19F-AEF2-9AE8CA26CF3D}.Debug|Win32.Build.0 = Debug|Win32
+		{55AE3D72-7DE6-F19F-AEF2-9AE8CA26CF3D}.Debug|x64.ActiveCfg = Debug|x64
+		{55AE3D72-7DE6-F19F-AEF2-9AE8CA26CF3D}.Debug|x64.Build.0 = Debug|x64
+		{55AE3D72-7DE6-F19F-AEF2-9AE8CA26CF3D}.Release MX|Win32.ActiveCfg = Release MX|Win32
+		{55AE3D72-7DE6-F19F-AEF2-9AE8CA26CF3D}.Release MX|Win32.Build.0 = Release MX|Win32
+		{55AE3D72-7DE6-F19F-AEF2-9AE8CA26CF3D}.Release MX|x64.ActiveCfg = Release MX|x64
+		{55AE3D72-7DE6-F19F-AEF2-9AE8CA26CF3D}.Release MX|x64.Build.0 = Release MX|x64
+		{55AE3D72-7DE6-F19F-AEF2-9AE8CA26CF3D}.Release|Win32.ActiveCfg = Release|Win32
+		{55AE3D72-7DE6-F19F-AEF2-9AE8CA26CF3D}.Release|Win32.Build.0 = Release|Win32
+		{55AE3D72-7DE6-F19F-AEF2-9AE8CA26CF3D}.Release|x64.ActiveCfg = Release|x64
+		{55AE3D72-7DE6-F19F-AEF2-9AE8CA26CF3D}.Release|x64.Build.0 = Release|x64
+		{AEAC4286-2203-4B42-A016-BCE0503806CF}.Debug MX|Win32.ActiveCfg = Debug|Win32
+		{AEAC4286-2203-4B42-A016-BCE0503806CF}.Debug MX|Win32.Build.0 = Debug|Win32
+		{AEAC4286-2203-4B42-A016-BCE0503806CF}.Debug MX|x64.ActiveCfg = Debug|Win32
+		{AEAC4286-2203-4B42-A016-BCE0503806CF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AEAC4286-2203-4B42-A016-BCE0503806CF}.Debug|Win32.Build.0 = Debug|Win32
+		{AEAC4286-2203-4B42-A016-BCE0503806CF}.Debug|x64.ActiveCfg = Debug|x64
+		{AEAC4286-2203-4B42-A016-BCE0503806CF}.Debug|x64.Build.0 = Debug|x64
+		{AEAC4286-2203-4B42-A016-BCE0503806CF}.Release MX|Win32.ActiveCfg = Release|Win32
+		{AEAC4286-2203-4B42-A016-BCE0503806CF}.Release MX|Win32.Build.0 = Release|Win32
+		{AEAC4286-2203-4B42-A016-BCE0503806CF}.Release MX|x64.ActiveCfg = Release|Win32
+		{AEAC4286-2203-4B42-A016-BCE0503806CF}.Release|Win32.ActiveCfg = Release|Win32
+		{AEAC4286-2203-4B42-A016-BCE0503806CF}.Release|Win32.Build.0 = Release|Win32
+		{AEAC4286-2203-4B42-A016-BCE0503806CF}.Release|x64.ActiveCfg = Release|x64
+		{AEAC4286-2203-4B42-A016-BCE0503806CF}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VisualSVNWorkingCopyRoot = 
+	EndGlobalSection
+EndGlobal
