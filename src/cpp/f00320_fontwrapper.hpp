@@ -58,7 +58,7 @@ public:
 		
 		cout << "\n\n\nFONT LOAD\n\n\n";
 		
-		fontImage = loadBMP("..\\data\\fonts\\"+fontName+".bmp");
+		fontImage = loadBMP("../data/fonts/"+fontName+".bmp");
 		if (isIcons) {
 			fontImage->getTextureId(GL_NEAREST);
 		}
@@ -94,7 +94,7 @@ public:
 			
 		}
 		else {
-			if ( singleton->loadFile("..\\data\\fonts\\"+fontName+".js", &lastJSONBuffer) )
+			if ( singleton->loadFile("../data/fonts/"+fontName+".js", &lastJSONBuffer) )
 			{
 				if (singleton->processJSON(&lastJSONBuffer, &(singleton->nullBuffer), &jsRoot)) {
 					

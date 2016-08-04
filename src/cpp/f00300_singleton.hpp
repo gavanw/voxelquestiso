@@ -457,7 +457,7 @@ public:
 		
 		for (i = 0; i < EML_LENGTH; i++) {
 			music[i] = new GameMusic();
-			music[i]->init("..\\data\\music\\"+musicStrings[i]+".ogg");
+			music[i]->init("../data/music/"+musicStrings[i]+".ogg");
 			music[i]->setLoop(true);
 		}
 		
@@ -514,12 +514,12 @@ public:
 		timeOfDay = 1.0f;
 		targetTimeOfDay = 1.0f;
 		
-		guiSaveLoc = "..\\cdat\\saves\\save0\\compMap.txt";
+		guiSaveLoc = "../cdat/saves/save0/compMap.txt";
 
-		//invItems = loadBMP("..\\data\\invitems.bmp");
-		imageHM0 = loadBMP("..\\data\\hm0.bmp");
-		imageHM1 = loadBMP("..\\data\\hm1.bmp");
-		cloudImage = loadBMP("..\\data\\clouds.bmp");
+		//invItems = loadBMP("../data/invitems.bmp");
+		imageHM0 = loadBMP("../data/hm0.bmp");
+		imageHM1 = loadBMP("../data/hm1.bmp");
+		cloudImage = loadBMP("../data/clouds.bmp");
 
 		//invItems->getTextureId(GL_NEAREST);
 		imageHM0->getTextureId(GL_NEAREST);
@@ -1442,7 +1442,7 @@ public:
 	void prepSound(string soundName) {
 		if (soundMap.find( soundName ) == soundMap.end()) {
 			soundMap.insert( pair<string, GameSound>(soundName, GameSound()) );
-			soundMap[soundName].init("..\\data\\sounds\\"+soundName+".wav");
+			soundMap[soundName].init("../data/sounds/"+soundName+".wav");
 		}
 	}
 
@@ -5346,7 +5346,7 @@ public:
 		
 		
 		if (
-			loadJSON("..\\cdat\\lastJSONBufferGUI.js", &guiRootJS)
+			loadJSON("../cdat/lastJSONBufferGUI.js", &guiRootJS)
 		) {
 			mainGUI->guiFromJSON(
 				guiRootJS
@@ -5372,12 +5372,12 @@ public:
 
 	void loadAllData()
 	{
-		if ( loadFile("..\\cdat\\lastJSONBuffer.js", &lastJSONBuffer) )
+		if ( loadFile("../cdat/lastJSONBuffer.js", &lastJSONBuffer) )
 		{
 			processJSON(&lastJSONBuffer, &nullBuffer, &rootObjJS);
 		}
 
-		if ( loadFile("..\\cdat\\lastImageBuffer.txt", &lastImageBuffer) )
+		if ( loadFile("../cdat/lastImageBuffer.txt", &lastImageBuffer) )
 		{
 			processB64(&lastImageBuffer, &nullBuffer);
 		}
@@ -5389,8 +5389,8 @@ public:
 	{
 		
 		
-		saveFile("..\\cdat\\lastJSONBuffer.js", &lastJSONBuffer);
-		saveFile("..\\cdat\\lastImageBuffer.txt", &lastImageBuffer);
+		saveFile("../cdat/lastJSONBuffer.js", &lastJSONBuffer);
+		saveFile("../cdat/lastImageBuffer.txt", &lastImageBuffer);
 		
 		cout << "All Data Saved\n";
 	}
