@@ -42,7 +42,7 @@ int MAX_CONSOLE_LINES = 500;
 void RedirectIOToConsole()
 
 {
-
+#ifdef WIN32
     int hConHandle;
 
     long lStdHandle;
@@ -102,6 +102,8 @@ void RedirectIOToConsole()
     *stderr = *fp;
 
     setvbuf( stderr, NULL, _IONBF, 0 );
+
+#endif
 
     std::ios::sync_with_stdio();
 
