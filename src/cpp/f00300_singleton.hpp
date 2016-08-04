@@ -3623,7 +3623,9 @@ public:
 
 
 		if (key == 17) {
+#ifndef __APPLE__
 			glutLeaveMainLoop();
+#endif
 		}
 
 		switch (key) {

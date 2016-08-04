@@ -103,9 +103,14 @@ else()
   find_package(GLEW REQUIRED)
   find_package(SFML 2 REQUIRED audio)
 
-  include_directories("${SFML_INCLUDE_DIR}")
+  include_directories(
+    "${OPENGL_INCLUDE_DIR}"
+    "${GLUT_INCLUDE_DIR}"
+    "${GLEW_INCLUDE_DIR}"
+    "${SFML_INCLUDE_DIR}"
+    )
 
   target_link_libraries("${PROJECT_NAME}"
-    ${OPENGL_LIBRARIES} ${GLUT_glut_LIBRARY} ${GLEW_LIBRARIES}
+    ${OPENGL_LIBRARIES} ${GLUT_LIBRARIES} ${GLEW_LIBRARIES}
     ${SFML_LIBRARIES})
 endif()
