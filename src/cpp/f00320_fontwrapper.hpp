@@ -58,6 +58,7 @@ public:
 		
 		cout << "\n\n\nFONT LOAD\n\n\n";
 		
+    jsRoot = nullptr;
 		fontImage = loadBMP("../data/fonts/"+fontName+".bmp");
 		if (isIcons) {
 			fontImage->getTextureId(GL_NEAREST);
