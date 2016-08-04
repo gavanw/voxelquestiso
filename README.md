@@ -1,3 +1,7 @@
+## ADDITIONAL REQUIRED FILES:
+Download this and extract as instructed in "installing" below
+https://github.com/gavanw/voxelquestiso/releases/download/0.11/resources.zip
+
 
 ## Voxel Quest Isometric
 
@@ -35,7 +39,7 @@ Steps:
 
 6) type "explorer ."
 
-7) extract "resources.zip" to this folder (if using WinRar, right click on the zip file and select "extract to here")
+7) extract "resources.zip" to this folder (this link to this file is at the top of this readme)
 
 8) open "GLSLFragmentLighting.sln"
 
