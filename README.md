@@ -49,7 +49,9 @@ Steps:
 VQ uses automatic header generation (via lzz) and also concatenates files and performs other operations with batch scripts. The output file is located in compiled/main.cpp (useful for debugging). However, you cannot edit this file, you must edit the files that it is based off of (i.e. if you double click on an error in Visual Studio, it will bring up the generated file). If you do not like working with generated code, you can always generate it once then disable the scripts and edit the output file(s) by hand.
 
 The rationale for lzz and file concatenation can be found in the links below. In addition, header generation reduces the amount of code you need to maintain (bonus, you only need to have one tab open per class in your editor). Generation with concatenation simplifies the entire use of headers and relieves users of the responsibility of managing include directives.
+
 http://stackoverflow.com/a/318440
+
 http://stackoverflow.com/a/373179
 
 
