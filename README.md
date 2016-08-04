@@ -11,7 +11,7 @@ Voxel Quest is a project with several engine iterations. This is the very first 
 
 Note that this is the earliest engine iteration and many fixes have been made since then, but there is also high demand for the isometric version of the engine so I am releasing that first in spite of the fact that it is the least polished iteration.
 
-This is a very, very, VERY rough release. There are many things wrong with the way this project is organized currently, and I am well aware of most of them but feel free to comment. A few things that are wrong: use of absolute paths, including all dependencies within the same project folder, unnecessary files in the repository, an all-around messy project structure, etc. In short, this thing is more fun than a jar full of angry bees!
+This is a very, very, VERY rough release. There are many things wrong with the way this project is organized currently, and I am well aware of most of them but feel free to comment. A few things that are wrong: use of absolute paths (edit: now fixed by another user, please credit yourself I lost the commit info during the wipe), including all dependencies within the same project folder, unnecessary files in the repository, an all-around messy project structure, etc. In short, this thing is more fun than a jar full of angry bees!
 
 The code is also not that well organized, but I will try to explain it as best I can.
 
@@ -47,6 +47,11 @@ Steps:
 ## Building 
 
 VQ uses automatic header generation (via lzz) and also concatenates files and performs other operations with batch scripts. The output file is located in compiled/main.cpp (useful for debugging). However, you cannot edit this file, you must edit the files that it is based off of (i.e. if you double click on an error in Visual Studio, it will bring up the generated file). If you do not like working with generated code, you can always generate it once then disable the scripts and edit the output file(s) by hand.
+
+The rationale for lzz and file concatenation can be found in the links below. In addition, header generation reduces the amount of code you need to maintain (bonus, you only need to have one tab open per class in your editor). Generation with concatenation simplifies the entire use of headers and relieves users of the responsibility of managing include directives.
+http://stackoverflow.com/a/318440
+http://stackoverflow.com/a/373179
+
 
 Open "GLSLFragmentLighting.sln" in Visual Studio Express 2012 (https://www.microsoft.com/en-us/download/details.aspx?id=34673)
 
