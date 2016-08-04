@@ -83,7 +83,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>C:\wamp\www\voxelquestiso\glew\include;C:\wamp\www\voxelquestiso\SFML-2.1\include;C:\wamp\www\voxelquestiso\freeglut\include;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)\glew\include;$(SolutionDir)\SFML-2.1\include;$(SolutionDir)\freeglut\include;$(IncludePath)</IncludePath>
     <LibraryPath>opengl32.lib;glu32.lib;C:\wamp\www\voxelquestiso\SFML-2.1\lib;C:\wamp\www\voxelquestiso\glew\lib\Release\x64;C:\wamp\www\voxelquestiso\freeglut\lib\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -180,13 +180,13 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>C:\wamp\www\voxelquestiso\glew\lib;C:\Program Files %28x86%29\Windows Kits\8.0\Lib\win8\um\x64;C:\Program Files %28x86%29\Microsoft Visual Studio 11.0\VC\lib\amd64;C:\SFML-2.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)\glew\lib;C:\Program Files %28x86%29\Windows Kits\8.0\Lib\win8\um\x64;C:\Program Files %28x86%29\Microsoft Visual Studio 11.0\VC\lib\amd64;$(SolutionDir)\SFML-2.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <StackReserveSize>
       </StackReserveSize>
       <AdditionalDependencies>sfml-system-s.lib;sfml-audio-s.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PreBuildEvent>
-      <Command>../combine.bat</Command>
+      <Command>$(SolutionDir)combine.bat $(SolutionDir)</Command>
     </PreBuildEvent>
     <PostBuildEvent>
       <Command>../cleanup.bat;</Command>

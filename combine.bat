@@ -6,9 +6,10 @@ echo ...
 echo ...
 echo ...
 echo ...
-
-cd c:\wamp\www\voxelquestiso
 echo cleaning files
+
+cd %1
+
 del /q .\compiled\*.*
 del /q .\temp\*.*
 
@@ -16,8 +17,8 @@ del /q .\temp\*.*
 echo copying files to source
 :: -----------------------------------
 
-xcopy /s /y .\src\cpp .\temp
-xcopy /y .\lzz.exe .\temp
+xcopy /s /y /i .\src\cpp .\temp
+xcopy /y /i .\lzz.exe .\temp
 cd temp
 
 :: -----------------------------------
@@ -67,5 +68,5 @@ cd ..
 echo copying files to compiled
 :: -----------------------------------
 
-xcopy /s /y .\temp\*.e .\compiled
+xcopy /s /y /i .\temp\*.e .\compiled
 copy /b .\temp\*.h .\compiled\main.cpp
