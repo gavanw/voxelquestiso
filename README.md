@@ -20,8 +20,6 @@ Anyhow, I just want to get something out - I can't spend all of my time perfecti
 
 ## Installation
 
-This project currently MUST exist at C:\wamp\www\voxelquestiso. This is bad, I know, see above. If you want to change this path, simply open the entire folder in an editor like Sublime Text and replace all instances of "C:\wamp\www\voxelquestiso" with your own directory.
-
 Recommended: Windows 7+, 16+ gigabytes of RAM, GTX 780+, but it should run on less.
 
 If you wish to separate out the requirements, it uses SFML 2.1. If you wish to utilize Poco (for networking), it uses an older version of poco and you must define USE_POCO in the code.
@@ -30,9 +28,9 @@ Steps:
 
 1) install git as needed (duh!)
 
-2) create the folder "c:\wamp\www" if it does not already exist
+2) create the parent folder where you want to store this repository (note that there will likely be more versions in the future, so you may want one folder to store all of them)
 
-3) open cmd and navigate this folder (type "cd c:\wamp\www")
+3) open cmd and navigate this folder
 
 4) type "git clone https://github.com/gavanw/voxelquestiso.git"
 
