@@ -230,7 +230,7 @@ public:
 		if (isFloat) {
 
 
-			if ( (pixelsFloat == NULL) ) {
+			if (pixelsFloat == NULL) {
 				getPixels();
 			}
 
@@ -344,7 +344,7 @@ public:
 	int getPixelAtC(int x, int y, int channel) {
 
 		if (!isFloat) {
-			if ( (pixelsChar == NULL) ) {
+			if (pixelsChar == NULL) {
 				getPixels();
 			}
 

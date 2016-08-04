@@ -1505,7 +1505,7 @@ public:
 											
 											
 											
-											if ( (curDir==1) ) { // 
+											if (curDir==1) { // 
 												
 												if (curBT == E_CT_DOORWAY) {
 													

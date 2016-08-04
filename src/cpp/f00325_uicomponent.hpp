@@ -1218,7 +1218,7 @@ public:
 		}
 		
 		bool finalRes = wasHit||hitChild;
-		if ((state == GLUT_UP)) { //&&(wheelDelta==0.0f)
+		if (state == GLUT_UP) { //&&(wheelDelta==0.0f)
 			wasHit = false;
 		}
 		
@@ -1558,10 +1558,7 @@ public:
 				// render a space
 				
 				curChar = ' ';
-				if (
-					//(i == wordVec.size()-1) && 
-					(j == wordVec[i].size()-1)
-				) {
+				if (j == wordVec[i].size()-1) {
 					//end of line, no space
 				}
 				else {
