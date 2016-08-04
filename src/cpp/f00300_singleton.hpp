@@ -3623,7 +3623,7 @@ public:
 
 
 		if (key == 17) {
-			glutLeaveMainLoop();
+			glutDestroyWindow(glutGetWindow());
 		}
 
 		switch (key) {

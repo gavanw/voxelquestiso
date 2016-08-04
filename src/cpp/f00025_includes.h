@@ -126,9 +126,16 @@ bool TRACE_ON = false;
 #include <SFML/Audio/Music.hpp>
 
 #include <GL/glew.h>
+#ifdef __APPLE__
+#include <OpenGL/gl.h>
+#include <OpenGL/glu.h>
+#include <GLUT/glut.h>
+#else
 #include <GL/gl.h>
 #include <GL/glu.h>
 #include <GL/freeglut.h>
+#endif
+
 #ifdef WIN32
 #pragma comment(lib, "glew32.lib")
 #endif
