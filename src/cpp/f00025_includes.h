@@ -81,7 +81,9 @@ float TOT_CPU_MEM_USAGE = 0.0f;
 bool TRACE_ON = false;
 //#define DEBUG_MODE 1
 
+#ifdef WIN32
 #include <SDKDDKVer.h>
+#endif
 
 
 #include <cmath>
@@ -109,22 +111,27 @@ bool TRACE_ON = false;
 
 #include <stdlib.h>
 #include <math.h>
-#include <tchar.h>
 #include <fcntl.h>
 #include <stdio.h>
 #include <assert.h>
+#include <float.h>
+#ifdef WIN32
+#include <tchar.h>
 #include <io.h>
 #include <conio.h>
+#endif
 
 #include <SFML/Audio/SoundBuffer.hpp>
 #include <SFML/Audio/Sound.hpp>
 #include <SFML/Audio/Music.hpp>
 
-#include <gl/glew.h>
-#include <gl/gl.h>
-#include <gl/glu.h>
-#include <gl/freeglut.h>
+#include <GL/glew.h>
+#include <GL/gl.h>
+#include <GL/glu.h>
+#include <GL/freeglut.h>
+#ifdef WIN32
 #pragma comment(lib, "glew32.lib")
+#endif
 
 
 

@@ -658,6 +658,8 @@ public:
 			mapTrans = 0.0;
 		}
 		
+    bool changesMade = false;
+    bool bufferInvalid = false;
 
 		if (mapLockOn)
 		{
@@ -685,8 +687,8 @@ public:
 			singleton->unbindShader();
 		}
 
-		bool changesMade = singleton->changesMade;
-		bool bufferInvalid = singleton->bufferInvalid;
+		changesMade = singleton->changesMade;
+		bufferInvalid = singleton->bufferInvalid;
 		
 
 		if (mapTrans < 1.0f)
